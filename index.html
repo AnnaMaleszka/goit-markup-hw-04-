@@ -555,29 +555,29 @@
           </div>
           </div>
         
-          <form class="newsletter">
+
+          <div>
               <p class="label-newsletter">
               Zapisz się do newslettera
           </p>
-            <fieldset class="textNewsletter">
-            
-      
-            <textarea class="textarea-newsletter" name="text"  
-                  placeholder="E-mail" ></textarea>
-            <button type="submit" class="join-button"><div class="join">Zapisz się</div></button>
-            <svg class="send">
+          <input type="text" name="e-mail" class="E-mail" placeholder="E-mail"/>
+          <button type="submit" class="join-button">Zapisz się
+       <svg class="icon-send">
               <use
               xlink:href="./images/icons.svg#icon-icon-send"
               width="24"
               height="24"
               ></use>
             </svg>
-          </fieldset>
-          </form>
+            
+          </button>
+          </div>
 
         
       </section>
     </footer>
+
+
     <div class="backdrop is-hidden"data-modal>
         <div class="modal">
           <button type="button"class="close-btn" data-modal-close>
@@ -647,16 +647,17 @@
                   placeholder="Wprowadź tekst" ></textarea>
             </fieldset>
           </form>
-         <div class="form-accept">
-         
-            <input type="checkbox"/>
+         <div >
+         <label class="checkbox">
+            <input type="checkbox" name="checkbox"/>
            <p> Oświadczam iż akceptuję <a href="index.html" class="form-link"> Regulamin </a>i <a href="index.html" class="form-link">Politykę Prywatności</a>.
          </div>
-         <div class="modal-window-button">
+         
          <button type="submit" class="submit-button">Wyślij</button>
-         </div>
+        
         </div>  
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
