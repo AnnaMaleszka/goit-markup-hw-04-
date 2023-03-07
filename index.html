@@ -38,7 +38,7 @@
           <li>
             <a
               href="mailto:info@devstudio.com"
-              class="link-contact contact-icon"
+              class="link-contact "
             >
               <svg class="icon-spacing" width="16" height="12">
                 <use xlink:href="./images/icons.svg#icon-envelope"></use>
@@ -47,7 +47,7 @@
             >
           </li>
           <li>
-            <a href="tel:+48111111111" class="link-contact contact-icon">
+            <a href="tel:+48111111111" class="link-contact">
               <svg class="icon-spacing" width="16" height="12">
                 <use xlink:href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -59,17 +59,17 @@
     </header>
     <main>
       <section class="page-description" >
-        <section class="container">
+        <div class="container">
           <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
          
           <button type="button" class="button"  data-modal-open>Zamów usługę</button>
         
-        </section>
+        </div>
       </section>
 
       <section class="container section section-no-bottom">
         <ul class="list">
-          <li class="line-distance">
+          <li >
             <div class="icon">
               <svg width=" 70" height="70">
                 <use xlink:href="./images/icons.svg#icon-antenna-1"></use>
@@ -82,7 +82,7 @@
             </p>
           </li>
 
-          <li class="line-distance">
+          <li >
             <div class="icon">
               <svg width=" 70" height="70">
                 <use xlink:href="./images/icons.svg#icon-clock-1"></use>
@@ -94,7 +94,7 @@
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="line-distance">
+          <li >
             <div class="icon">
               <svg width=" 70" height="70">
                 <use xlink:href="./images/icons.svg#icon-diagram-1"></use>
@@ -107,7 +107,7 @@
             </p>
           </li>
 
-          <li class="line-distance">
+          <li >
             <div class="icon">
               <svg width=" 70" height="70">
                 <use xlink:href="./images/icons.svg#icon-astronaut-1"></use>
@@ -121,6 +121,8 @@
           </li>
         </ul>
       </section>
+
+
       <section class="container section">
         <h2 class="image-description">Czym się zajmujemy</h2>
         <ul class="list-image">
@@ -155,7 +157,7 @@
         </ul>
       </section>
       <section class="style-jobs">
-        <section class="container section">
+        <div class="container section">
           <h2 class="image-description">Nasz zespół</h2>
           <ul class="list-image">
             <li class="border">
@@ -399,7 +401,7 @@
               </div>
             </li>
           </ul>
-        </section>
+        </div>
       </section>
       <section class="container section">
           <h2 class="image-description">Nasi klienci</h2>
@@ -560,7 +562,7 @@
               <p class="label-newsletter">
               Zapisz się do newslettera
           </p>
-          <input type="text" name="e-mail" class="E-mail" placeholder="E-mail"/>
+          <input type="text" name="e-mail" class="email" placeholder="E-mail"/>
           <button type="submit" class="join-button">Zapisz się
        <svg class="icon-send">
               <use
@@ -595,65 +597,65 @@
              
               
           </button>
-             <div>
+            
+         
+         <form class="form">
+          
               <p class="form-title">Zostaw swoje dane w formularzu poniżej</p>
-              </div>
-
-          <form class="form">
-            <fieldset class="fieldset">
-              <label class="details label">
-                Imię
-              </label>
-              <svg  class="icons icon-position">
+             
+          <fieldset class="fieldset">
+            <label class="label details">
+              Imię
+              <svg  class="icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-1-1"
                       width="12"
                       height="12"
+                     
                     >
                     </use>
               </svg>
-              <input type="name" name="name" class="form-borders"/>
-            </fieldset>
-              <fieldset class="fieldset">
-              <label class="details label">
-                Telefon
-              </label>
-              <svg  class="icons icon-position">
+              <input type="name" name="name" class="input-border"/>
+            </label>
+            <label class="label details">
+              Numer telefonu  
+              <svg  class="icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-2-1"
                       width="12"
                       height="12"
                     >
                     </use>
               </svg>
-              <input type="name" name="name" class="form-borders"/>
-            </fieldset>
-             <fieldset class="fieldset">
-              <label class="details label">
-                E-mail
-              </label>
-              <svg  class="icons icon-position">
+              <input type="tel" name="phone_number" class="input-border"/>
+            </label>
+            <label class="label details">
+              E-mail
+              <svg  class="icons">
                     <use xlink:href="./images/icons.svg#icon-Vector-3-1"
                       width="12"
                       height="12"
                     >
                     </use>
               </svg>
-              <input type="name" name="name" class="form-borders"/>
-            </fieldset>
-               <fieldset class="fieldset-comment">
-              <label class="details label">
-                Komentarz
-              </label>
-              <textarea class="textarea-comment comment" name="text"  
+              <input type="email" name="email" class="input-border"/>
+            </label>
+            <label class="label details">
+              Komentarz
+               <textarea class="textarea-comment comment" name="text"  
                   placeholder="Wprowadź tekst" ></textarea>
-            </fieldset>
-          </form>
-         <div >
-         <label class="checkbox">
-            <input type="checkbox" name="checkbox"/>
-           <p> Oświadczam iż akceptuję <a href="index.html" class="form-link"> Regulamin </a>i <a href="index.html" class="form-link">Politykę Prywatności</a>.
-         </div>
+            </label>
+          </fieldset>
+            <label class="checkbox">
+              <input type="checkbox"  name="checkbox"/> 
+             
+              <p> Oświadczam iż akceptuję <a href="index.html" class="form-link"> Regulamin </a>i <a href="index.html" class="form-link">Politykę Prywatności</a>.
+              </p>
+            </label>
+            <button type="submit" class="submit-button">Wyślij</button>
+          
+         </form>
+        
          
-         <button type="submit" class="submit-button">Wyślij</button>
+         
         
         </div>  
     </div>
