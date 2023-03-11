@@ -562,7 +562,7 @@
               <p class="label-newsletter">
               Zapisz się do newslettera
           </p>
-          <input type="text" name="e-mail" class="email" placeholder="E-mail"/>
+          <input type="text" name="e-mail" class="email"  placeholder="E-mail"/>
           <button type="submit" class="join-button">Zapisz się
        <svg class="icon-send">
               <use
@@ -644,12 +644,24 @@
                   placeholder="Wprowadź tekst" ></textarea>
             </label>
           </fieldset>
-            <label class="checkbox">
-              <input type="checkbox"  name="checkbox"/> 
+        
+        
              
-              <p> Oświadczam iż akceptuję <a href="index.html" class="form-link"> Regulamin </a>i <a href="index.html" class="form-link">Politykę Prywatności</a>.
-              </p>
-            </label>
+              <label class="checkbox">
+                <input type="checkbox" name="accept" value="true" class="checked"/>
+                <span class="checkmark"></span>
+               <svg class="checkmark_icon">
+                <use xlink:href="./images/icons.svg#icon-Vector-5"
+                width="16"
+                height="15"
+                >
+              </use>
+              </svg>
+                <p> Oświadczam iż akceptuję <a href="index.html" class="form-link"> Regulamin </a>i <a href="index.html" class="form-link">Politykę Prywatności</a>.
+                  </p>
+                  
+              </label>
+             
             <button type="submit" class="submit-button">Wyślij</button>
           
          </form>
